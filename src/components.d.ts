@@ -25,6 +25,7 @@ export namespace Components {
         "text": string;
     }
     interface StencilModal {
+        "closeIcon": string;
     }
 }
 declare global {
@@ -72,6 +73,7 @@ declare namespace LocalJSX {
         "text"?: string;
     }
     interface StencilModal {
+        "closeIcon"?: string;
     }
     interface IntrinsicElements {
         "my-component": MyComponent;
