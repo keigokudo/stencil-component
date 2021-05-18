@@ -21,11 +21,15 @@ export namespace Components {
         "middle": string;
     }
     interface StencilButton {
-        "apperance": string;
+        "appearance": string;
         "text": string;
     }
     interface StencilModal {
+        "appearance": string;
+        "buttons": string;
         "closeIcon": string;
+        "header": string;
+        "isopen": boolean;
     }
 }
 declare global {
@@ -69,11 +73,16 @@ declare namespace LocalJSX {
         "middle"?: string;
     }
     interface StencilButton {
-        "apperance"?: string;
+        "appearance"?: string;
         "text"?: string;
     }
     interface StencilModal {
+        "appearance"?: string;
+        "buttons"?: string;
         "closeIcon"?: string;
+        "header"?: string;
+        "isopen"?: boolean;
+        "onAction"?: (event: CustomEvent<any>) => void;
     }
     interface IntrinsicElements {
         "my-component": MyComponent;

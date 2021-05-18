@@ -7,11 +7,11 @@ import { Component, h, Prop } from '@stencil/core';
 })
 export class StencilButton {
   @Prop() text: string;
-  @Prop() apperance: string;
+  @Prop() appearance: string;
 
   render() {
     return (
-      <button class={`btn ${this.apperance}`} type="button">
+      <button class={`btn ${this.appearance}`} type="button">
         {this.text}
       </button>
     );
