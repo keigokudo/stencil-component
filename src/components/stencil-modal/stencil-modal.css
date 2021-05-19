@@ -87,14 +87,14 @@
   align-items: center;
 }
 
-.modal-wrapper .modal .footer apollo-button {
+.modal-wrapper .modal .footer stencil-button {
   margin: 0 6px;
 }
 
-.modal-wrapper .modal .footer apollo-button:first-child {
+.modal-wrapper .modal .footer stencil-button:first-child {
   margin: 0 6px 0px 0px;
 }
-.modal-wrapper .modal .footer apollo-button:last-child {
+.modal-wrapper .modal .footer stencil-button:last-child {
   margin: 0 0px 0px 6px;
 }
 
