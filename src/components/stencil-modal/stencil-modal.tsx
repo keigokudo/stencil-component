@@ -11,10 +11,9 @@ export class StencilModal {
     mutable: true,
     reflect: true,
   })
-  @Prop()
-  header: string;
+  isopen: boolean;
+  @Prop() header: string;
   @Prop() appearance: string;
-  @Prop() isopen: boolean;
   @Prop() closeIcon = 'x.svg';
   @Prop() buttons: string;
 
@@ -30,8 +29,6 @@ export class StencilModal {
 
   componentWillLoad() {
     this.objectDataWatcher(this.buttons);
-    console.log(this.buttons, 'ori');
-    console.log(this._buttons);
   }
 
   @Event() private action: EventEmitter;
